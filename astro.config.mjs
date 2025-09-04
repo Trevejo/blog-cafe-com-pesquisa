@@ -1,12 +1,11 @@
 // @ts-check
 
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
-import { defineConfig } from "astro/config";
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://trevejo.github.io/blog-cafe-com-pesquisa",
-  base: "/blog-cafe-com-pesquisa",
-  integrations: [mdx(), sitemap()],
+	site: 'https://example.com',
+	integrations: [mdx(), sitemap()],
 });
