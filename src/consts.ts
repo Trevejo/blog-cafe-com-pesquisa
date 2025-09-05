@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "Café Cinzento";
 export const SITE_DESCRIPTION = "Postagens feitas a base de café.";
+export const BASE_PATH = import.meta.env.BASE_URL;
