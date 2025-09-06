@@ -2,46 +2,55 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { BASE_PATH, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<h1>☕ Café com Pesquisa!</h1>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				Puxe uma cadeira, encha a caneca e vem com a gente descomplicar o mundo da
+				<strong>Pesquisa Operacional</strong>. Aqui a gente combina boas ideias, modelos
+				matemáticos e uma dose generosa de cafeína para transformar problemas reais em
+				soluções inteligentes.
+			</p>
+			<h2>Sobre o blog</h2>
+			<p>
+				Este é um espaço para compartilhar <strong>métodos de Pesquisa Operacional</strong>,
+				incluindo programação linear e inteira, heurísticas e metaheurísticas, simulação,
+				teoria das filas, otimização e aplicações práticas no dia a dia. A ideia é explicar
+				com leveza, exemplos e, claro, muito café.
 			</p>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+				Se você curte modelagem, dados e decisões bem fundamentadas, já pode salvar nos
+				favoritos. Se está começando agora, melhor ainda: a casa é sua!
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
+
+			<h2>Quem escreve</h2>
+			<section aria-labelledby="autores">
+				<h3 id="autores">Os baristas da otimização</h3>
+				<ul>
+					<li>
+						<strong>Murilo Trevejo</strong> — curioso por dados, fã de modelos elegantes e
+						café passado na hora. Escreve sobre fundamentos, boas práticas e casos de uso
+						no mundo real.
+					</li>
+					<li>
+						<strong>Fábio Gomes</strong> — entusiasta de otimização aplicada, simulação e aquele
+						espresso que resolve bugs. Traz heurísticas, insights práticos e experimentos.
+					</li>
+				</ul>
+			</section>
+
 			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+				Pronto para a primeira leitura? Dê uma olhada nas nossas postagens em
+				<a href={`${BASE_PATH}/blog/`}>/blog</a>.
 			</p>
 		</main>
 		<Footer />

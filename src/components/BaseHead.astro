@@ -29,6 +29,9 @@ const { title, description, image = FallbackImage } = Astro.props;
 />
 <meta name="generator" content={Astro.generator} />
 
+<!-- Browser theme color -->
+<meta name="theme-color" content="#8b5e34" />
+
 <!-- Font preloads -->
 <link rel="preload" href={`${BASE_PATH}/fonts/atkinson-regular.woff`} as="font" type="font/woff" crossorigin />
 <link rel="preload" href={`${BASE_PATH}/fonts/atkinson-bold.woff`} as="font" type="font/woff" crossorigin />

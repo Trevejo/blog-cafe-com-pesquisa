@@ -9,7 +9,6 @@ import HeaderLink from './HeaderLink.astro';
 		<div class="internal-links">
 			<HeaderLink href={`${BASE_PATH}`}>Início</HeaderLink>
 			<HeaderLink href={`${BASE_PATH}/blog/`}>Blog</HeaderLink>
-			<HeaderLink href={`${BASE_PATH}/about/`}>Sobre</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://github.com/trevejo/blog-cafe-com-pesquisa" target="_blank">
@@ -28,8 +27,9 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: #fffaf4;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+		border-bottom: 1px solid rgba(var(--gray), 0.2);
 	}
 	h2 {
 		margin: 0;
@@ -39,25 +39,39 @@ import HeaderLink from './HeaderLink.astro';
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+		color: rgb(var(--black));
 	}
 	nav {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
 		align-items: center;
-		justify-content: space-between;
 	}
+
+	nav h2 { justify-self: start; }
+
+	.internal-links { justify-self: center; display: flex; gap: 0.25em; }
+
+	.social-links { justify-self: end; }
+
 	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
+		padding: 1em 0.75em;
+		color: rgb(var(--black));
+		border-bottom: 3px solid transparent;
 		text-decoration: none;
+		border-radius: 6px 6px 0 0;
+	}
+	nav a:hover {
+		background: rgba(var(--gray-light), 0.6);
 	}
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
+		color: var(--accent-dark);
 	}
 	.social-links,
 	.social-links a {
 		display: flex;
+		color: rgb(var(--black));
 	}
 	@media (max-width: 720px) {
 		.social-links {
