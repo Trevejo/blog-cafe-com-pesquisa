@@ -1,16 +1,79 @@
 ---
-title: 'First post'
+title: '🎲 Teoria dos Jogos'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
+pubDate: '08/07/2025'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## Resumo  
+Este artigo apresenta uma análise abrangente da Teoria dos Jogos como método da pesquisa operacional (OR), abordando sua origem histórica, fundamentação teórica, formulação matemática, aplicações práticas, um exemplo resolvido detalhadamente, discussão crítica e perspectivas futuras. Parte-se dos fundamentos históricos com von Neumann e Morgenstern, passando por Nash, e avança até técnicas computacionais modernas. O texto visa oferecer clareza acadêmica e rigor técnico, articulando teoria e aplicação em contextos como economia, logística e ciência da computação.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## Introdução  
+A Teoria dos Jogos emerge como ramo da matemática aplicada dedicado ao estudo de situações em que múltiplos agentes (jogadores) tomam decisões estratégicas cujos desfechos são interdependentes. Seu surgimento formal se dá com John von Neumann e Oskar Morgenstern, que em 1944 publicaram *Theory of Games and Economic Behavior*, reconhecido como o texto fundador do campo. No contexto da pesquisa operacional, esse método integrou-se ao conjunto de ferramentas matemáticas da OR a partir dos anos 1950, junto com programação linear, teoria das filas e simulação. A relevância da Teoria dos Jogos na OR está em fornecer estrutura para análise de conflitos, cooperação e competição em sistemas complexos, sendo aplicada em logística, economia, ciência da computação e gestão estratégica.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+[Imagem ilustrativa representando a capa do livro *Theory of Games and Economic Behavior*]
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## Fundamentação Teórica  
+A base teórica da Teoria dos Jogos inclui conceitos como jogos de soma zero, jogos não-cooperativos, equilíbrio de Nash, teorema minimax, jogos em forma normal e estendida, entre outros. O teorema minimax, demonstrado por von Neumann em 1928, mostra que em jogos de soma zero existe uma estratégia ótima mista que minimiza perdas, mesmo diante de adversários racionais. A ampliação para equilibrar interesses mutuamente interdependentes encontra seu ponto de inflexão no conceito de **equilíbrio de Nash**, proposto por John Nash na década de 1950: um conjunto de estratégias em que nenhum jogador melhora seu resultado ao mudar de forma unilateral. A interpretação clássica da **prisão do dilema**, desenvolvida por Flood e Dresher no RAND em 1950, ilustra como a cooperação racional pode falhar em jogos não-cooperativos.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+[Imagem ilustrativa representando a matriz do Dilema do Prisioneiro]
+
+### Evolução histórica  
+Desde as primeiras ideias em 1713 (Waldegrave), passando pelas conclusões de Cournot em 1838, até os marcos de von Neumann (1928) e a formalização com Morgenstern (1944), a Teoria dos Jogos tornou-se gradualmente central na análise estratégica. As contribuições posteriores de Nash, Selten e Harsanyi, além da aplicação em biologia evolutiva com estratégias evolutivamente estáveis (Maynard Smith), e o reconhecimento com o Nobel de Nash, Harsanyi e Selten em 1994, marcam seu desenvolvimento contínuo.
+
+## Formulação Matemática  
+A formulação matemática envolve representar o jogo em **forma normal** (matriz de payoff) ou **forma extensiva** (árvores de decisão), definindo jogadores, estratégias, funções de utilidade e os critérios de equilíbrio. Para jogos de soma zero, utiliza-se o problema minimax:  
+
+\[
+\max_{x} \min_{y} x^T A y
+\]  
+
+Para jogos bimatrix não-cooperativos, o equilíbrio de Nash satisfaz:  
+
+\[
+u_i(s_i^*, s_{-i}^*) \ge u_i(s_i, s_{-i}^*) \quad \forall i, \forall s_i
+\]  
+
+onde \(s_i^*\) é melhor resposta dos jogadores.  
+
+[Imagem ilustrativa representando uma matriz de payoff e suas estratégias]
+
+## Aplicações Práticas  
+As aplicações da Teoria dos Jogos dentro da OR são vastas: na gestão de cadeias de suprimentos, coordenação sob competição e cooperação (Stackelberg, Cournot), precificação e contratos, logística reversa, economia circular e compartilhada. Também se estende à análise de riscos, alocação de recursos e gestão de projetos. Em ambientes de defesa, modela cenários estratégicos de conflito, guerra e segurança. Na ciência da computação, surgem modelos sofisticados com aprendizado multiagente e análise distribuída de equilíbrios.  
+
+[Imagem ilustrativa mostrando uma cadeia de suprimentos com empresas competindo e cooperando]
+
+## Exemplo Resolvido Passo a Passo  
+
+**Problema**: Duas empresas competem em preço — alta (H) ou baixa (B). Payoffs (Empresa A, Empresa B):
+
+| A\B | H       | B       |
+|-----|---------|---------|
+| H   | (2,2)   | (1,3)   |
+| B   | (3,1)   | (2,2)   |
+
+**Passo 1**: Repostas ótimas de A:  
+- Se B escolher H → A escolhe B (3>2).  
+- Se B escolher B → A escolhe H (2>1).  
+
+**Passo 2**: Respostas ótimas de B:  
+- Se A escolher H → B escolhe B (3>2).  
+- Se A escolher B → B escolhe H (2>1).  
+
+**Passo 3**: Encontre o equilíbrio (interseção de melhores respostas). O único resultado estável é (B,B), com payoff (2,2). Este é o equilíbrio de Nash.
+
+[Imagem ilustrativa representando a matriz do jogo com destaque para o equilíbrio de Nash]
+
+## Discussão Crítica  
+A Teoria dos Jogos oferece poder de modelagem de interações estratégicas, clareza conceitual e mecanismos formais de solução. Contudo, enfrenta limitações: múltiplos equilíbrios, suposições de racionalidade ilimitada, informação completa ou parcial idealizada, além de desafios computacionais em jogos de grande escala. Extensões como jogos evolutivos, cooperação repetida, jogos estocásticos e aprendizado multiagente visam mitigar as limitações e adaptar o método a cenários mais realistas.
+
+## Conclusão  
+A Teoria dos Jogos consolidou-se como um método essencial dentro da pesquisa operacional, unindo rigor teórico e amplitude de aplicação. Desde suas origens com von Neumann e Morgenstern até sua integração em cadeias de suprimentos, economia compartilhada, defesa e algoritmos modernos, mostra-se indispensável para análise estratégica e otimização de sistemas competitivos. Perspectivas futuras apontam para fusões com inteligência artificial, aprendizado distribuído e grande escala, ampliando o escopo e a efetividade da teoria.
+
+---
+
+## Referências  
+- von Neumann, J.; Morgenstern, O. *Theory of Games and Economic Behavior*. Princeton University Press, 1944.  
+- Nash, J. *Equilibrium points in n-person games*. Proceedings of the National Academy of Sciences, 1950.  
+- Osborne, M. J.; Rubinstein, A. *A Course in Game Theory*. MIT Press, 1994.  
+- Taha, H. A. *Operations Research: An Introduction*. Pearson, 2017.  

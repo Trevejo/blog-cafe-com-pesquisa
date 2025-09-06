@@ -1,16 +1,112 @@
 ---
-title: 'Second post'
+title: '🎒 Problema da Mochila'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
 heroImage: '../../assets/blog-placeholder-4.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## Introdução
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+O **Problema da Mochila** (Knapsack Problem) é um dos problemas clássicos da **otimização combinatória** e da **pesquisa operacional**. Ele consiste em selecionar um subconjunto de itens, cada um com um peso e um valor, de forma que a soma dos pesos não ultrapasse a capacidade de uma mochila e o valor total seja maximizado. Esse problema é amplamente estudado devido à sua aplicabilidade em áreas como logística, finanças, engenharia e ciência da computação. Além disso, é um problema **NP-completo**, o que significa que não existe um algoritmo polinomial conhecido para resolvê-lo em todos os casos, tornando-o um desafio teórico e prático relevante.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+[Imagem ilustrativa mostrando uma mochila com itens de diferentes pesos e valores.]
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+---
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+## Conceitos Fundamentais
+
+O problema da mochila pode ser formalizado da seguinte forma:
+
+Dado um conjunto de \( n \) itens, cada item \( i \) possui:
+- Um valor \( v_i \)
+- Um peso \( w_i \)
+
+Deseja-se escolher um subconjunto desses itens para maximizar:
+
+$$
+\text{Maximizar } Z = \sum_{i=1}^{n} v_i x_i
+$$
+
+Sujeito a:
+
+$$
+\sum_{i=1}^{n} w_i x_i \leq W, \quad x_i \in \{0,1\}
+$$
+
+Onde:
+- \( W \) é a capacidade máxima da mochila.
+- \( x_i = 1 \) se o item \( i \) é incluído, e \( 0 \) caso contrário.
+
+### Variações do Problema
+- **Mochila 0/1**: Cada item pode ser incluído ou não.
+- **Mochila Fracionária**: Permite incluir frações de itens.
+- **Mochila Limitada**: Cada item tem quantidade limitada.
+- **Mochila Ilimitada**: Quantidade infinita de cada item.
+- **Múltiplas Mochilas**: Mais de uma mochila com restrições próprias.
+
+[Imagem ilustrativa mostrando a formulação matemática do problema.]
+
+---
+
+## Aplicações Práticas
+
+### 1. Logística e Transporte
+Empresas de transporte utilizam o problema da mochila para determinar quais cargas transportar em veículos com capacidade limitada, maximizando o valor da carga transportada. Isso é essencial para reduzir custos e aumentar a eficiência operacional.
+
+### 2. Seleção de Investimentos
+No setor financeiro, o problema é aplicado na seleção de projetos ou ativos que maximizem o retorno esperado, respeitando um orçamento limitado. Essa abordagem é comum em fundos de investimento e planejamento estratégico.
+
+[Imagem ilustrativa mostrando um caminhão com capacidade limitada e itens de diferentes valores.]
+
+---
+
+## Exemplo Resolvido Passo a Passo
+
+Considere:
+- Capacidade da mochila \( W = 10 \)
+- Itens:  
+  1. Peso = 5, Valor = 4  
+  2. Peso = 4, Valor = 6  
+  3. Peso = 3, Valor = 5  
+  4. Peso = 2, Valor = 3  
+  5. Peso = 1, Valor = 1  
+
+### Passo 1: Estruturação do Problema
+$$
+\text{Maximizar } Z = 4x_1 + 6x_2 + 5x_3 + 3x_4 + 1x_5
+$$
+Sujeito a:
+$$
+5x_1 + 4x_2 + 3x_3 + 2x_4 + 1x_5 \leq 10, \quad x_i \in \{0,1\}
+$$
+
+### Passo 2: Aplicando Programação Dinâmica
+Criamos uma matriz com linhas representando itens e colunas representando capacidades (0 a 10). Preenchemos a tabela considerando:
+$$
+G(i,j) = \max(G(i-1,j), G(i-1,j - w_i) + v_i)
+$$
+
+Após preencher a tabela, obtemos:
+$$
+\text{Valor máximo } = 14
+$$
+Com a combinação: Itens 2, 3 e 4 (pesos 4+3+2 = 9, valores 6+5+3 = 14).
+
+[Imagem ilustrativa mostrando a tabela de programação dinâmica preenchida.]
+
+---
+
+## Conclusão
+
+O problema da mochila é um exemplo clássico de como a pesquisa operacional contribui para a tomada de decisões em ambientes com recursos limitados. Sua relevância está na ampla aplicabilidade e na complexidade computacional, que desafia pesquisadores a desenvolver métodos eficientes. No entanto, sua principal limitação é a escalabilidade, pois instâncias grandes exigem heurísticas ou algoritmos aproximados para soluções viáveis em tempo razoável.
+
+---
+
+## Referências
+
+- Souza, É. L., & Rafael, E. A. L. (2009). **Abordagens para resolver o problema da mochila 0/1**. Revista IGAPÓ. Disponível em: https://igapo.ifam.edu.br  
+- AcademiaLab. **Problema da Mochila**. Disponível em: https://academia-lab.com  
+- Estatística Fácil. **O que é Knapsack - Entenda o Problema da Mochila**. Disponível em: https://estatisticafacil.org  
+- Universidade Estadual de Campinas. **Formulações para o Problema da Mochila**. Disponível em: [https://www.ime.unicampbr  
+- Pitombeira, A. **Programação Linear Inteira: Problema da Mochila**. UFC.  
+- Taha, H. A. (2017). **Pesquisa Operacional** (8ª ed.). Pearson.  
