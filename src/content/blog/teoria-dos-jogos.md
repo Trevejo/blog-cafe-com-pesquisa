@@ -11,7 +11,14 @@ Este artigo apresenta uma análise abrangente da Teoria dos Jogos como método d
 ## Introdução  
 A Teoria dos Jogos emerge como ramo da matemática aplicada dedicado ao estudo de situações em que múltiplos agentes (jogadores) tomam decisões estratégicas cujos desfechos são interdependentes. Seu surgimento formal se dá com John von Neumann e Oskar Morgenstern, que em 1944 publicaram *Theory of Games and Economic Behavior*, reconhecido como o texto fundador do campo. No contexto da pesquisa operacional, esse método integrou-se ao conjunto de ferramentas matemáticas da OR a partir dos anos 1950, junto com programação linear, teoria das filas e simulação. A relevância da Teoria dos Jogos na OR está em fornecer estrutura para análise de conflitos, cooperação e competição em sistemas complexos, sendo aplicada em logística, economia, ciência da computação e gestão estratégica.
 
-[Imagem ilustrativa representando a capa do livro *Theory of Games and Economic Behavior*]
+<figure style="text-align: center;">
+  <img src="/src/assets/theory.jpg" 
+       alt="Descrição" 
+       style="max-width: 35%; height: auto; display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Capa do livro "Theory of Games and Economic Behavior"
+  </figcaption>
+</figure>
 
 ## Fundamentação Teórica  
 A base teórica da Teoria dos Jogos inclui conceitos como jogos de soma zero, jogos não-cooperativos, equilíbrio de Nash, teorema minimax, jogos em forma normal e estendida, entre outros. O teorema minimax, demonstrado por von Neumann em 1928, mostra que em jogos de soma zero existe uma estratégia ótima mista que minimiza perdas, mesmo diante de adversários racionais. A ampliação para equilibrar interesses mutuamente interdependentes encontra seu ponto de inflexão no conceito de **equilíbrio de Nash**, proposto por John Nash na década de 1950: um conjunto de estratégias em que nenhum jogador melhora seu resultado ao mudar de forma unilateral. A interpretação clássica da **prisão do dilema**, desenvolvida por Flood e Dresher no RAND em 1950, ilustra como a cooperação racional pode falhar em jogos não-cooperativos.
