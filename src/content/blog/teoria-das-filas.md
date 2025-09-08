@@ -35,7 +35,7 @@ A notação de **Kendall-Lee** é utilizada para classificar os sistemas de fila
 Um estudo realizado em um supermercado de Conselheiro Lafaiete-MG aplicou a teoria das filas para analisar o atendimento nos caixas. Utilizando simulação computacional com o software Arena®, foi possível identificar gargalos e propor melhorias no número de atendentes e na organização das filas. O resultado foi uma **redução significativa no tempo de espera dos clientes**, aumentando a satisfação e eficiência do serviço.[1](https://www.researchgate.net/profile/Icaro-Cunha-4/publication/385908003_APLICACAO_DA_TEORIA_DE_FILAS_ESTUDO_DE_CASO_EM_UM_SUPERMERCADO/links/673b727b88177c79e83120b3/APLICACAO-DA-TEORIA-DE-FILAS-ESTUDO-DE-CASO-EM-UM-SUPERMERCADO.pdf)
 
 <figure style="text-align: center;">
-  <img src="../../assets/simulacao-de-filas.png" 
+  <img src="../../src/assets/simulacao-de-filas.png" 
        alt="Modelo de simulação de filas em supermercado" 
        style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
@@ -47,7 +47,7 @@ Um estudo realizado em um supermercado de Conselheiro Lafaiete-MG aplicou a teor
 Na indústria, a teoria das filas é aplicada para **otimizar processos de produção**, como o fluxo de materiais entre máquinas, o despacho de produtos e o controle de estoques. Um exemplo é o uso da teoria para dimensionar o número de empilhadeiras em um centro de distribuição, garantindo que o tempo de espera para carregamento seja minimizado sem superdimensionar os recursos.[2](https://fecilcam.br/anais/vii_eepa/data/uploads/artigos/3-03.pdf)
 
 <figure style="text-align: center;">
-  <img src="../../assets/fluxo-de-atendimento.png" 
+  <img src="../../src/assets/fluxo-de-atendimento.png" 
        alt="Fluxo de atendimento em centro logístico" 
        style="max-width: 80%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
@@ -101,7 +101,7 @@ Vamos resolver um exemplo clássico de fila M/M/1, que representa um sistema com
 | Tempo na fila (TF)       | 10 minutos    |
 
 <figure style="text-align: center;">
-  <img src="../../assets/diagrama-m-m-1.png" 
+  <img src="../../src/assets/diagrama-m-m-1.png" 
        alt="Diagrama do sistema M/M/1" 
        style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">

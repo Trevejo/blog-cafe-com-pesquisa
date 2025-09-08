@@ -10,7 +10,7 @@ heroImage: '../../assets/mochila.jpg'
 O **Problema da Mochila** (Knapsack Problem) é um dos problemas clássicos da **otimização combinatória** e da **pesquisa operacional**. Ele consiste em selecionar um subconjunto de itens, cada um com um peso e um valor, de forma que a soma dos pesos não ultrapasse a capacidade de uma mochila e o valor total seja maximizado. Esse problema é amplamente estudado devido à sua aplicabilidade em áreas como logística, finanças, engenharia e ciência da computação. Além disso, é um problema **NP-completo**, o que significa que não existe um algoritmo polinomial conhecido para resolvê-lo em todos os casos, tornando-o um desafio teórico e prático relevante.
 
 <figure style="text-align: center;">
-  <img src="../../assets/banner-problema-da-mochila.png" 
+  <img src="../../src/assets/banner-problema-da-mochila.png" 
        alt="Mochila com itens de diferentes pesos e valores" 
        style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
@@ -52,7 +52,7 @@ Onde:
 - **Múltiplas Mochilas**: Mais de uma mochila com restrições próprias.
 
 <figure style="text-align: center;">
-  <img src="../../assets/formulacao-matematica-problema-mochila.jpg" 
+  <img src="../../src/assets/formulacao-matematica-problema-mochila.jpg" 
        alt="Formulação matemática do problema da mochila" 
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
@@ -68,7 +68,7 @@ Onde:
 Empresas de transporte utilizam o problema da mochila para determinar quais cargas transportar em veículos com capacidade limitada, maximizando o valor da carga transportada. Isso é essencial para reduzir custos e aumentar a eficiência operacional.
 
 <figure style="text-align: center;">
-  <img src="../../assets/caminhao-capacidade-limitada.png" 
+  <img src="../../src/assets/caminhao-capacidade-limitada.png" 
        alt="Caminhão com capacidade limitada transportando itens" 
        style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">

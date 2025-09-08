@@ -12,7 +12,7 @@ Este artigo apresenta uma análise abrangente da Teoria dos Jogos como método d
 A Teoria dos Jogos emerge como ramo da matemática aplicada dedicado ao estudo de situações em que múltiplos agentes (jogadores) tomam decisões estratégicas cujos desfechos são interdependentes. Seu surgimento formal se dá com John von Neumann e Oskar Morgenstern, que em 1944 publicaram *Theory of Games and Economic Behavior*, reconhecido como o texto fundador do campo. No contexto da pesquisa operacional, esse método integrou-se ao conjunto de ferramentas matemáticas da OR a partir dos anos 1950, junto com programação linear, teoria das filas e simulação. A relevância da Teoria dos Jogos na OR está em fornecer estrutura para análise de conflitos, cooperação e competição em sistemas complexos, sendo aplicada em logística, economia, ciência da computação e gestão estratégica.
 
 <figure style="text-align: center;">
-  <img src="../../assets/theory.jpg" 
+  <img src="../../src/assets/theory.jpg" 
        alt="Descrição" 
        style="max-width: 35%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
@@ -24,7 +24,7 @@ A Teoria dos Jogos emerge como ramo da matemática aplicada dedicado ao estudo d
 A base teórica da Teoria dos Jogos inclui conceitos como jogos de soma zero, jogos não-cooperativos, equilíbrio de Nash, teorema minimax, jogos em forma normal e estendida, entre outros. O teorema minimax, demonstrado por von Neumann em 1928, mostra que em jogos de soma zero existe uma estratégia ótima mista que minimiza perdas, mesmo diante de adversários racionais. A ampliação para equilibrar interesses mutuamente interdependentes encontra seu ponto de inflexão no conceito de **equilíbrio de Nash**, proposto por John Nash na década de 1950: um conjunto de estratégias em que nenhum jogador melhora seu resultado ao mudar de forma unilateral. A interpretação clássica da **prisão do dilema**, desenvolvida por Flood e Dresher no RAND em 1950, ilustra como a cooperação racional pode falhar em jogos não-cooperativos.
 
 <figure style="text-align: center;">
-  <img src="../../assets/dilema-do-prisioneiro.png" 
+  <img src="../../src/assets/dilema-do-prisioneiro.png" 
        alt="Matriz do Dilema do Prisioneiro" 
        style="max-width: 50%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
@@ -51,7 +51,7 @@ $$
 onde $s_i^*$ é melhor resposta dos jogadores.
 
 <figure style="text-align: center;">
-  <img src="../../assets/matriz-de-payoff.png" 
+  <img src="../../src/assets/matriz-de-payoff.png" 
        alt="Matriz de payoff com estratégias" 
        style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
@@ -63,7 +63,7 @@ onde $s_i^*$ é melhor resposta dos jogadores.
 As aplicações da Teoria dos Jogos dentro da OR são vastas: na gestão de cadeias de suprimentos, coordenação sob competição e cooperação (Stackelberg, Cournot), precificação e contratos, logística reversa, economia circular e compartilhada. Também se estende à análise de riscos, alocação de recursos e gestão de projetos. Em ambientes de defesa, modela cenários estratégicos de conflito, guerra e segurança. Na ciência da computação, surgem modelos sofisticados com aprendizado multiagente e análise distribuída de equilíbrios.  
 
 <figure style="text-align: center;">
-  <img src="../../assets/cadeia-de-suprimentos.jpg" 
+  <img src="../../src/assets/cadeia-de-suprimentos.jpg"
        alt="Cadeia de suprimentos com competição e cooperação" 
        style="max-width: 70%; height: auto; display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
