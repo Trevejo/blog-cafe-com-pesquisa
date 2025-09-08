@@ -5,18 +5,26 @@ pubDate: '08/06/2025'
 heroImage: '../../assets/mochila.jpg'
 ---
 
+import { Image } from 'astro:assets';
+import bannerImage from '../../assets/banner-problema-da-mochila.png';
+import formulacaoImage from '../../assets/formulacao-matematica-problema-mochila.jpg';
+import caminhaoImage from '../../assets/caminhao-capacidade-limitada.png';
+
 ## Introdução
 
 O **Problema da Mochila** (Knapsack Problem) é um dos problemas clássicos da **otimização combinatória** e da **pesquisa operacional**. Ele consiste em selecionar um subconjunto de itens, cada um com um peso e um valor, de forma que a soma dos pesos não ultrapasse a capacidade de uma mochila e o valor total seja maximizado. Esse problema é amplamente estudado devido à sua aplicabilidade em áreas como logística, finanças, engenharia e ciência da computação. Além disso, é um problema **NP-completo**, o que significa que não existe um algoritmo polinomial conhecido para resolvê-lo em todos os casos, tornando-o um desafio teórico e prático relevante.
 
-<figure style="text-align: center;">
-  <img src="../../src/assets/banner-problema-da-mochila.png" 
-       alt="Mochila com itens de diferentes pesos e valores" 
-       style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
-  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+<div style="text-align: center;">
+  <Image 
+    src={bannerImage}
+    alt="Mochila com itens de diferentes pesos e valores" 
+    width={400}
+    height={200}
+  />
+  <p style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
     Ilustração do Problema da Mochila
-  </figcaption>
-</figure>
+  </p>
+</div>
 
 ---
 
@@ -51,14 +59,17 @@ Onde:
 - **Mochila Ilimitada**: Quantidade infinita de cada item.
 - **Múltiplas Mochilas**: Mais de uma mochila com restrições próprias.
 
-<figure style="text-align: center;">
-  <img src="../../src/assets/formulacao-matematica-problema-mochila.jpg" 
-       alt="Formulação matemática do problema da mochila" 
-       style="max-width: 70%; height: auto; display: block; margin: 0 auto;" />
-  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+<div style="text-align: center;">
+  <Image 
+    src={formulacaoImage}
+    alt="Formulação matemática do problema da mochila" 
+    width={500}
+    height={300}
+  />
+  <p style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
     Formulação matemática do Problema da Mochila
-  </figcaption>
-</figure>
+  </p>
+</div>
 
 ---
 
@@ -67,14 +78,17 @@ Onde:
 ### 1. Logística e Transporte
 Empresas de transporte utilizam o problema da mochila para determinar quais cargas transportar em veículos com capacidade limitada, maximizando o valor da carga transportada. Isso é essencial para reduzir custos e aumentar a eficiência operacional.
 
-<figure style="text-align: center;">
-  <img src="../../src/assets/caminhao-capacidade-limitada.png" 
-       alt="Caminhão com capacidade limitada transportando itens" 
-       style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
-  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+<div style="text-align: center;">
+  <Image 
+    src={caminhaoImage}
+    alt="Caminhão com capacidade limitada transportando itens" 
+    width={400}
+    height={250}
+  />
+  <p style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
     Aplicação em logística: otimização de cargas em veículos
-  </figcaption>
-</figure>
+  </p>
+</div>
 
 ### 2. Seleção de Investimentos
 No setor financeiro, o problema é aplicado na seleção de projetos ou ativos que maximizem o retorno esperado, respeitando um orçamento limitado. Essa abordagem é comum em fundos de investimento e planejamento estratégico.
