@@ -2,7 +2,7 @@
 title: '🎲 Teoria dos Jogos'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: '08/07/2025'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/banner-teoria-dos-jogos.jpg'
 ---
 
 ## Resumo  
@@ -23,7 +23,14 @@ A Teoria dos Jogos emerge como ramo da matemática aplicada dedicado ao estudo d
 ## Fundamentação Teórica  
 A base teórica da Teoria dos Jogos inclui conceitos como jogos de soma zero, jogos não-cooperativos, equilíbrio de Nash, teorema minimax, jogos em forma normal e estendida, entre outros. O teorema minimax, demonstrado por von Neumann em 1928, mostra que em jogos de soma zero existe uma estratégia ótima mista que minimiza perdas, mesmo diante de adversários racionais. A ampliação para equilibrar interesses mutuamente interdependentes encontra seu ponto de inflexão no conceito de **equilíbrio de Nash**, proposto por John Nash na década de 1950: um conjunto de estratégias em que nenhum jogador melhora seu resultado ao mudar de forma unilateral. A interpretação clássica da **prisão do dilema**, desenvolvida por Flood e Dresher no RAND em 1950, ilustra como a cooperação racional pode falhar em jogos não-cooperativos.
 
-[Imagem ilustrativa representando a matriz do Dilema do Prisioneiro]
+<figure style="text-align: center;">
+  <img src="/src/assets/dilema-do-prisioneiro.png" 
+       alt="Matriz do Dilema do Prisioneiro" 
+       style="max-width: 50%; height: auto; display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Matriz do Dilema do Prisioneiro
+  </figcaption>
+</figure>
 
 ### Evolução histórica  
 Desde as primeiras ideias em 1713 (Waldegrave), passando pelas conclusões de Cournot em 1838, até os marcos de von Neumann (1928) e a formalização com Morgenstern (1944), a Teoria dos Jogos tornou-se gradualmente central na análise estratégica. As contribuições posteriores de Nash, Selten e Harsanyi, além da aplicação em biologia evolutiva com estratégias evolutivamente estáveis (Maynard Smith), e o reconhecimento com o Nobel de Nash, Harsanyi e Selten em 1994, marcam seu desenvolvimento contínuo.
@@ -43,12 +50,26 @@ $$
 
 onde $s_i^*$ é melhor resposta dos jogadores.
 
-[Imagem ilustrativa representando uma matriz de payoff e suas estratégias]
+<figure style="text-align: center;">
+  <img src="/src/assets/matriz-de-payoff.png" 
+       alt="Matriz de payoff com estratégias" 
+       style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Matriz de payoff e suas estratégias
+  </figcaption>
+</figure>
 
 ## Aplicações Práticas  
 As aplicações da Teoria dos Jogos dentro da OR são vastas: na gestão de cadeias de suprimentos, coordenação sob competição e cooperação (Stackelberg, Cournot), precificação e contratos, logística reversa, economia circular e compartilhada. Também se estende à análise de riscos, alocação de recursos e gestão de projetos. Em ambientes de defesa, modela cenários estratégicos de conflito, guerra e segurança. Na ciência da computação, surgem modelos sofisticados com aprendizado multiagente e análise distribuída de equilíbrios.  
 
-[Imagem ilustrativa mostrando uma cadeia de suprimentos com empresas competindo e cooperando]
+<figure style="text-align: center;">
+  <img src="/src/assets/cadeia-de-suprimentos.jpg" 
+       alt="Cadeia de suprimentos com competição e cooperação" 
+       style="max-width: 70%; height: auto; display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Cadeia de suprimentos: competição e cooperação entre empresas
+  </figcaption>
+</figure>
 
 ## Exemplo Resolvido Passo a Passo  
 
@@ -69,8 +90,6 @@ As aplicações da Teoria dos Jogos dentro da OR são vastas: na gestão de cade
 
 **Passo 3**: Encontre o equilíbrio (interseção de melhores respostas). O único resultado estável é (B,B), com payoff (2,2). Este é o equilíbrio de Nash.
 
-[Imagem ilustrativa representando a matriz do jogo com destaque para o equilíbrio de Nash]
-
 ## Discussão Crítica  
 A Teoria dos Jogos oferece poder de modelagem de interações estratégicas, clareza conceitual e mecanismos formais de solução. Contudo, enfrenta limitações: múltiplos equilíbrios, suposições de racionalidade ilimitada, informação completa ou parcial idealizada, além de desafios computacionais em jogos de grande escala. Extensões como jogos evolutivos, cooperação repetida, jogos estocásticos e aprendizado multiagente visam mitigar as limitações e adaptar o método a cenários mais realistas.
 
@@ -80,7 +99,8 @@ A Teoria dos Jogos consolidou-se como um método essencial dentro da pesquisa op
 ---
 
 ## Referências  
-- von Neumann, J.; Morgenstern, O. *Theory of Games and Economic Behavior*. Princeton University Press, 1944.  
-- Nash, J. *Equilibrium points in n-person games*. Proceedings of the National Academy of Sciences, 1950.  
-- Osborne, M. J.; Rubinstein, A. *A Course in Game Theory*. MIT Press, 1994.  
-- Taha, H. A. *Operations Research: An Introduction*. Pearson, 2017.  
+- Vicente, R. *Uma Introdução à Teoria dos Jogos*. Universidade de São Paulo. Disponível em: [ime.usp.br](https://www.ime.usp.br/~rvicente/IntroTeoriaDosJogos.pdf)  
+- Santos, C. S. *Introdução à Teoria dos Jogos*. Universidade Federal de Sergipe. Disponível em: [ri.ufs.br](https://ri.ufs.br/bitstream/riufs/8805/2/CLEVERTON_SOUZA_SANTOS.pdf)  
+- Andrade, M. A. R. *Teoria dos Jogos, uma ferramenta para a estratégia nas organizações*. Anais do SEGeT, 2016. Disponível em: [aedb.br](https://www.aedb.br/seget/arquivos/artigos16/24124247.pdf)  
+- Moreira, R. C. *Um estudo comparativo entre a Teoria dos Jogos e a Teoria dos Custos em redes*. Produção Online, 2003. Disponível em: [scielo.br](https://www.scielo.br/j/pope/a/zzm4gHDnCp5HZMGmcCkSwMx/abstract/?format=html&lang=pt)  
+- Wikipedia. *Teoria dos Jogos*. Disponível em: [pt.wikipedia.org](https://pt.wikipedia.org/wiki/Teoria_dos_jogos)  

@@ -1,15 +1,22 @@
 ---
 title: '🎒 Problema da Mochila'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 15 2022'
-heroImage: '../../assets/blog-placeholder-4.jpg'
+pubDate: '08/06/2025'
+heroImage: '../../assets/mochila.jpg'
 ---
 
 ## Introdução
 
 O **Problema da Mochila** (Knapsack Problem) é um dos problemas clássicos da **otimização combinatória** e da **pesquisa operacional**. Ele consiste em selecionar um subconjunto de itens, cada um com um peso e um valor, de forma que a soma dos pesos não ultrapasse a capacidade de uma mochila e o valor total seja maximizado. Esse problema é amplamente estudado devido à sua aplicabilidade em áreas como logística, finanças, engenharia e ciência da computação. Além disso, é um problema **NP-completo**, o que significa que não existe um algoritmo polinomial conhecido para resolvê-lo em todos os casos, tornando-o um desafio teórico e prático relevante.
 
-[Imagem ilustrativa mostrando uma mochila com itens de diferentes pesos e valores.]
+<figure style="text-align: center;">
+  <img src="/src/assets/banner-problema-da-mochila.png" 
+       alt="Mochila com itens de diferentes pesos e valores" 
+       style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Ilustração do Problema da Mochila
+  </figcaption>
+</figure>
 
 ---
 
@@ -44,7 +51,14 @@ Onde:
 - **Mochila Ilimitada**: Quantidade infinita de cada item.
 - **Múltiplas Mochilas**: Mais de uma mochila com restrições próprias.
 
-[Imagem ilustrativa mostrando a formulação matemática do problema.]
+<figure style="text-align: center;">
+  <img src="/src/assets/formulacao-matematica-problema-mochila.jpg" 
+       alt="Formulação matemática do problema da mochila" 
+       style="max-width: 70%; height: auto; display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Formulação matemática do Problema da Mochila
+  </figcaption>
+</figure>
 
 ---
 
@@ -53,10 +67,17 @@ Onde:
 ### 1. Logística e Transporte
 Empresas de transporte utilizam o problema da mochila para determinar quais cargas transportar em veículos com capacidade limitada, maximizando o valor da carga transportada. Isso é essencial para reduzir custos e aumentar a eficiência operacional.
 
+<figure style="text-align: center;">
+  <img src="/src/assets/caminhao-capacidade-limitada.png" 
+       alt="Caminhão com capacidade limitada transportando itens" 
+       style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Aplicação em logística: otimização de cargas em veículos
+  </figcaption>
+</figure>
+
 ### 2. Seleção de Investimentos
 No setor financeiro, o problema é aplicado na seleção de projetos ou ativos que maximizem o retorno esperado, respeitando um orçamento limitado. Essa abordagem é comum em fundos de investimento e planejamento estratégico.
-
-[Imagem ilustrativa mostrando um caminhão com capacidade limitada e itens de diferentes valores.]
 
 ---
 
@@ -92,8 +113,6 @@ $$
 $$
 Com a combinação: Itens 2, 3 e 4 (pesos 4+3+2 = 9, valores 6+5+3 = 14).
 
-[Imagem ilustrativa mostrando a tabela de programação dinâmica preenchida.]
-
 ---
 
 ## Conclusão
@@ -102,11 +121,9 @@ O problema da mochila é um exemplo clássico de como a pesquisa operacional con
 
 ---
 
-## Referências
+## Referências  
 
-- Souza, É. L., & Rafael, E. A. L. (2009). **Abordagens para resolver o problema da mochila 0/1**. Revista IGAPÓ. Disponível em: https://igapo.ifam.edu.br  
-- AcademiaLab. **Problema da Mochila**. Disponível em: https://academia-lab.com  
-- Estatística Fácil. **O que é Knapsack - Entenda o Problema da Mochila**. Disponível em: https://estatisticafacil.org  
-- Universidade Estadual de Campinas. **Formulações para o Problema da Mochila**. Disponível em: [https://www.ime.unicampbr  
-- Pitombeira, A. **Programação Linear Inteira: Problema da Mochila**. UFC.  
-- Taha, H. A. (2017). **Pesquisa Operacional** (8ª ed.). Pearson.  
+- Wikipédia. *Problema da Mochila*. Disponível em: [pt.wikipedia.org](https://pt.wikipedia.org/wiki/Problema_da_mochila)
+- Rubens Carvalho. *Problema da Mochila e suas variações* (Projeto Supervisionado, UNICAMP, 2015). Disponível em: [ime.unicamp.br](https://www.ime.unicamp.br/~mac/db/2015-1S-122181-1.pdf)
+- Marques, F. P.; Arenales. *O Problema da Mochila Compartimentada e aplicações*. *Pesquisa Operacional Para as Decisões* (SciELO), 2002. Disponível em: [scielo.br](https://www.scielo.br/j/pope/a/VppNVbxgM6NFzFrmgNtTTCH/)
+- Sigmoidal.ai. *Desvendando o Problema da Mochila (Knapsack Problem)*. Blog, 2023. Disponível em: [sigmoidal.ai](https://sigmoidal.ai/desvendando-o-problema-da-mochila-knapsack-problem/)
