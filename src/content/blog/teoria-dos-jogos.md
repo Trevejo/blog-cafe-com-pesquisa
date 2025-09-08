@@ -29,19 +29,19 @@ A base teórica da Teoria dos Jogos inclui conceitos como jogos de soma zero, jo
 Desde as primeiras ideias em 1713 (Waldegrave), passando pelas conclusões de Cournot em 1838, até os marcos de von Neumann (1928) e a formalização com Morgenstern (1944), a Teoria dos Jogos tornou-se gradualmente central na análise estratégica. As contribuições posteriores de Nash, Selten e Harsanyi, além da aplicação em biologia evolutiva com estratégias evolutivamente estáveis (Maynard Smith), e o reconhecimento com o Nobel de Nash, Harsanyi e Selten em 1994, marcam seu desenvolvimento contínuo.
 
 ## Formulação Matemática  
-A formulação matemática envolve representar o jogo em **forma normal** (matriz de payoff) ou **forma extensiva** (árvores de decisão), definindo jogadores, estratégias, funções de utilidade e os critérios de equilíbrio. Para jogos de soma zero, utiliza-se o problema minimax:  
+A formulação matemática envolve representar o jogo em **forma normal** (matriz de payoff) ou **forma extensiva** (árvores de decisão), definindo jogadores, estratégias, funções de utilidade e os critérios de equilíbrio. Para jogos de soma zero, utiliza-se o problema minimax:
 
-\[
+$$
 \max_{x} \min_{y} x^T A y
-\]  
+$$
 
-Para jogos bimatrix não-cooperativos, o equilíbrio de Nash satisfaz:  
+Para jogos bimatrix não-cooperativos, o equilíbrio de Nash satisfaz:
 
-\[
+$$
 u_i(s_i^*, s_{-i}^*) \ge u_i(s_i, s_{-i}^*) \quad \forall i, \forall s_i
-\]  
+$$
 
-onde \(s_i^*\) é melhor resposta dos jogadores.  
+onde $s_i^*$ é melhor resposta dos jogadores.
 
 [Imagem ilustrativa representando uma matriz de payoff e suas estratégias]
 
@@ -59,13 +59,13 @@ As aplicações da Teoria dos Jogos dentro da OR são vastas: na gestão de cade
 | H   | (2,2)   | (1,3)   |
 | B   | (3,1)   | (2,2)   |
 
-**Passo 1**: Repostas ótimas de A:  
-- Se B escolher H → A escolhe B (3>2).  
-- Se B escolher B → A escolhe H (2>1).  
+**Passo 1**: Repostas ótimas de A:
+- Se B escolher H → A escolhe B (3>2).
+- Se B escolher B → A escolhe H (2>1).
 
-**Passo 2**: Respostas ótimas de B:  
-- Se A escolher H → B escolhe B (3>2).  
-- Se A escolher B → B escolhe H (2>1).  
+**Passo 2**: Respostas ótimas de B:
+- Se A escolher H → B escolhe B (3>2).
+- Se A escolher B → B escolhe H (2>1).
 
 **Passo 3**: Encontre o equilíbrio (interseção de melhores respostas). O único resultado estável é (B,B), com payoff (2,2). Este é o equilíbrio de Nash.
 

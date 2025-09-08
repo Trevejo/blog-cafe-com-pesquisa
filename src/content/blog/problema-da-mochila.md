@@ -17,9 +17,9 @@ O **Problema da Mochila** (Knapsack Problem) é um dos problemas clássicos da *
 
 O problema da mochila pode ser formalizado da seguinte forma:
 
-Dado um conjunto de \( n \) itens, cada item \( i \) possui:
-- Um valor \( v_i \)
-- Um peso \( w_i \)
+Dado um conjunto de $n$ itens, cada item $i$ possui:
+- Um valor $v_i$
+- Um peso $w_i$
 
 Deseja-se escolher um subconjunto desses itens para maximizar:
 
@@ -34,8 +34,8 @@ $$
 $$
 
 Onde:
-- \( W \) é a capacidade máxima da mochila.
-- \( x_i = 1 \) se o item \( i \) é incluído, e \( 0 \) caso contrário.
+- $W$ é a capacidade máxima da mochila.
+- $x_i = 1$ se o item $i$ é incluído, e $0$ caso contrário.
 
 ### Variações do Problema
 - **Mochila 0/1**: Cada item pode ser incluído ou não.
@@ -63,7 +63,7 @@ No setor financeiro, o problema é aplicado na seleção de projetos ou ativos q
 ## Exemplo Resolvido Passo a Passo
 
 Considere:
-- Capacidade da mochila \( W = 10 \)
+- Capacidade da mochila $W = 10$
 - Itens:  
   1. Peso = 5, Valor = 4  
   2. Peso = 4, Valor = 6  

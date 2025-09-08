@@ -15,8 +15,8 @@ Seu objetivo principal é **analisar e prever o comportamento de filas**, permit
 
 A teoria das filas é baseada em modelos matemáticos que descrevem o comportamento de sistemas de atendimento. Os principais componentes de um sistema de filas são:
 
-- **Processo de chegada**: geralmente modelado por uma distribuição de Poisson, com taxa média de chegada $$\lambda$$.
-- **Processo de atendimento**: frequentemente modelado por uma distribuição exponencial negativa, com taxa média de atendimento $$\mu$$.
+- **Processo de chegada**: geralmente modelado por uma distribuição de Poisson, com taxa média de chegada $\lambda$.
+- **Processo de atendimento**: frequentemente modelado por uma distribuição exponencial negativa, com taxa média de atendimento $\mu$.
 - **Disciplina da fila**: define a ordem de atendimento dos clientes, como FIFO (First In First Out), LIFO (Last In First Out), SIRO (Serviço em Ordem Aleatória) e SPT (Menor Tempo de Processamento).
 - **Estrutura do sistema**: pode variar entre canal único com fila única, canais múltiplos com fila única, canais múltiplos com múltiplas filas, entre outros.
 
@@ -47,25 +47,35 @@ Na indústria, a teoria das filas é aplicada para **otimizar processos de produ
 Vamos resolver um exemplo clássico de fila M/M/1, que representa um sistema com chegada de clientes segundo uma distribuição de Poisson e atendimento exponencial, com um único servidor.
 
 **Dados:**
-- Taxa média de chegada: $$\lambda = 25$$ clientes por hora
-- Taxa média de atendimento: $$\mu = 30$$ clientes por hora
+- Taxa média de chegada: $\lambda = 25$ clientes por hora
+- Taxa média de atendimento: $\mu = 30$ clientes por hora
 
 **Cálculos:**
 
 1. **Utilização do sistema:**
-   $$\rho = \frac{\lambda}{\mu} = \frac{25}{30} = 0{,}833$$
+   $$
+   \rho = \frac{\lambda}{\mu} = \frac{25}{30} = 0{,}833
+   $$
 
 2. **Número médio de clientes no sistema (NS):**
-   $$NS = \frac{\rho}{1 - \rho} = \frac{0{,}833}{1 - 0{,}833} = 5$$
+   $$
+   NS = \frac{\rho}{1 - \rho} = \frac{0{,}833}{1 - 0{,}833} = 5
+   $$
 
 3. **Número médio de clientes na fila (NF):**
-   $$NF = \frac{\rho^2}{1 - \rho} = \frac{(0{,}833)^2}{1 - 0{,}833} \approx 4{,}17$$
+   $$
+   NF = \frac{\rho^2}{1 - \rho} = \frac{(0{,}833)^2}{1 - 0{,}833} \approx 4{,}17
+   $$
 
 4. **Tempo médio no sistema (TS):**
-   $$TS = \frac{1}{\mu - \lambda} = \frac{1}{30 - 25} = 0{,}2 \text{ horas} = 12 \text{ minutos}$$
+   $$
+   TS = \frac{1}{\mu - \lambda} = \frac{1}{30 - 25} = 0{,}2 \text{ horas} = 12 \text{ minutos}
+   $$
 
 5. **Tempo médio na fila (TF):**
-   $$TF = TS - \frac{1}{\mu} = 0{,}2 - \frac{1}{30} \approx 0{,}167 \text{ horas} = 10 \text{ minutos}$$
+   $$
+   TF = TS - \frac{1}{\mu} = 0{,}2 - \frac{1}{30} \approx 0{,}167 \text{ horas} = 10 \text{ minutos}
+   $$
 
 **Tabela Resumo:**
 
@@ -78,8 +88,6 @@ Vamos resolver um exemplo clássico de fila M/M/1, que representa um sistema com
 | Tempo na fila (TF)       | 10 minutos    |
 
 [Imagem ilustrativa mostrando o diagrama de um sistema M/M/1 com fluxo de chegada e atendimento.]
-
-citeturn1search1
 
 ## Conclusão
 
